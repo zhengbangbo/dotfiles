@@ -1,0 +1,39 @@
+# gitconfig
+[user]
+email = zhengbangbo@hotmail.com
+name = Bang-Bo Zheng
+signingkey = CBDD2505A292145C
+# export GPG_TTY=$(tty)
+[github]
+user = zhengbangbo
+[color]
+ui = auto
+diff = auto
+status = auto
+branch = auto
+interactive = auto
+[alias]
+lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+co = checkout
+ci = commit -s
+br = branch
+st = status
+up = rebase
+last = log -1 HEAD
+unstage = reset HEAD --
+rc = commit --amend # 修改提交说明
+gp = log --grep     # 从提交说明中检索
+amend = commit --amend --reuse-message=HEAD
+n = !git --no-pager
+[core]
+excludesfile = ~/.gitignore_global
+editor = vim
+compression = 3
+[commit]
+gpgsign = true
+[init]
+defaultBranch = main
+[http]
+postBuffer = 1048576000
+lowSpeedLimit = 0
+lowSpeedTime = 999999
