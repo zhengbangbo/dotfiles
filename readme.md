@@ -6,7 +6,7 @@ brew install stow
 # set .stowrc
 stow -vt ~ stow
 # create symlink
-tow {alacritty,zsh,git}
+stow {alacritty,zsh,git}
 ```
 
 ## Check Also
@@ -16,4 +16,4 @@ tow {alacritty,zsh,git}
 ## Thanks
 
 - [antfu/dotfiles](https://github.com/antfu/dotfiles)
-- [keaising/dotfile](https://github.com/keaising/dotfile)  - Manage with [stow](https://www.gnu.org/software/stow/)
+- [keaising/dotfile](https://github.com/keaising/dotfile)  - managed by [stow](https://www.gnu.org/software/stow/)
