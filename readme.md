@@ -1,9 +1,13 @@
 # Bang-Bo's Dotfiles
 
-- [.zshrc](./.zshrc)
-- [.p10k.zsh](./.p10k.zsh)
-- [alacritty.yml](./.config/alacritty/alacritty.yml)
-- [.gitconfig](./.gitconfig)
+```bash
+# all dotfiles managed by stow, install stow first
+brew install stow
+# set .stowrc
+stow -vt ~ stow
+# create symlink
+tow {alacritty,zsh,git}
+```
 
 ## Check Also
 
@@ -11,5 +15,5 @@
 
 ## Thanks
 
-
 - [antfu/dotfiles](https://github.com/antfu/dotfiles)
+- [keaising/dotfile](https://github.com/keaising/dotfile)  - Manage with [stow](https://www.gnu.org/software/stow/)
