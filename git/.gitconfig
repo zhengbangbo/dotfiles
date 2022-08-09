@@ -4,6 +4,8 @@
   name = Bang-Bo Zheng
   signingkey = CBDD2505A292145C
 # export GPG_TTY=$(tty)
+[gpg]
+  program = /usr/local/MacGPG2/bin/gpg
 [github]
   user = zhengbangbo
 [color]

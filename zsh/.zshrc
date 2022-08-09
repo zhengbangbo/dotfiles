@@ -40,6 +40,7 @@ export LANG=en_US.UTF-8
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias lg=lazygit
 
 export GPG_TTY=$TTY
 
@@ -55,3 +56,13 @@ export PATH="$PNPM_HOME:$PATH"
 
 # fnm
 eval "$(fnm env)"
+
+# bun completions
+[ -s "/Users/zbb/.bun/_bun" ] && source "/Users/zbb/.bun/_bun"
+
+# bun
+export BUN_INSTALL="/Users/zbb/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# lazygit
+export PATH="$PATH:/Users/zbb/.local/bin"
