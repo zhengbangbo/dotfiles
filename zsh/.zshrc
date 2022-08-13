@@ -66,3 +66,6 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # lazygit
 export PATH="$PATH:/Users/zbb/.local/bin"
+
+# pgsql
+export PATH="/usr/local/opt/libpq/bin:$PATH"
