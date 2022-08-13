@@ -32,6 +32,7 @@
   excludesfile = ~/.gitignore_global
   editor = vim
   compression = 3
+	quotepath = false
 [commit]
   gpgsign = true
 [init]
