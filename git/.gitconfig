@@ -1,4 +1,5 @@
 # gitconfig
+# check: https://git-scm.com/docs/git-config
 [user]
   email = zhengbangbo@hotmail.com
   name = Bang-Bo Zheng
@@ -44,3 +45,5 @@
   smudge = git-lfs smudge -- %f
   process = git-lfs filter-process
   required = true
+[push]
+	autoSetupRemote = true
