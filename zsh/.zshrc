@@ -41,6 +41,12 @@ export LANG=en_US.UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias lg=lazygit
+alias v=/usr/local/bin/vim
+
+alias s="git status"
+alias a="git add ."
+alias c="git commit -m"
+alias p="git push"
 
 export GPG_TTY=$TTY
 
