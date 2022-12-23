@@ -10,6 +10,10 @@ sudo apt install stow # Ubuntu
 brew install stow # Homebrew Mac
 ```
 
+## Install 3rd party softwares(options)
+
+The zsh, for example, need to run `install.zsh`.
+
 ## Use Stow
 ```bash
 # set .stowrc
@@ -18,6 +22,10 @@ stow -vt ~ stow
 # create symlink
 stow {zsh,git}
 ```
+
+## TODO
+
+- fzf-tab
 
 ## Check Also
 
