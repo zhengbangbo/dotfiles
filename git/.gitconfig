@@ -1,12 +1,12 @@
 # gitconfig
-# check: https://git-scm.com/docs/git-config
+# https://git-scm.com/docs/git-config
 [user]
 	email = zhengbangbo@hotmail.com
 	name = Zheng, Bang-Bo
-  signingkey = CBDD2505A292145C
+	signingkey = CBDD2505A292145C
 # export GPG_TTY=$(tty)
 [gpg]
-  program = /usr/local/MacGPG2/bin/gpg
+	program = /usr/local/MacGPG2/bin/gpg
 [github]
   user = zhengbangbo
 [color]
@@ -31,7 +31,7 @@
   up = rebase
 [core]
 	excludesfile = /Users/zbb/.gitignore_global
-	editor = code --wait
+	editor = nvim
   compression = 3
   quotepath = false
 [commit]
