@@ -15,6 +15,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # git clone --depth=1 https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 # git clone --depth=1 https://github.com/agkozak/zsh-z ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-z
 plugins=(
+  poetry
   git
   zsh-autosuggestions
   zsh-syntax-highlighting
@@ -37,21 +38,14 @@ source $ZSH/oh-my-zsh.sh
 export LANG=en_US.UTF-8
 
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-alias lg=lazygit
-alias v=/usr/local/bin/vim
 
+# Git
 alias s="git status"
 alias a="git add ."
-alias c="git commit -m"
+alias c="git cz"
 alias p="git push"
-alias wip="s && a && c 'chore: wip'"
-
 export GPG_TTY=$TTY
 
-eval "$(pyenv init -)"
-# eval "$(pyenv virtualenv-init -)"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
@@ -72,6 +66,31 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # lazygit
 export PATH="$PATH:/Users/zbb/.local/bin"
+alias lg=lazygit
 
-# pgsql
-export PATH="/usr/local/opt/libpq/bin:$PATH"
+# vim
+alias v=/usr/local/bin/vim
+
+# https://github.com/buo/homebrew-cask-upgrade
+alias up="brew update && brew cu -a -y && brew cleanup"
+
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+
+# Anaconda
+# export PATH="/usr/local/anaconda3/bin:$PATH"  # commented out by conda initialize
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/usr/local/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/usr/local/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/usr/local/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/usr/local/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+

@@ -1,8 +1,8 @@
 # gitconfig
 # check: https://git-scm.com/docs/git-config
 [user]
-  email = zhengbangbo@hotmail.com
-  name = Bang-Bo Zheng
+	email = zhengbangbo@hotmail.com
+	name = Zheng, Bang-Bo
   signingkey = CBDD2505A292145C
 # export GPG_TTY=$(tty)
 [gpg]
@@ -30,8 +30,8 @@
   unstage = reset HEAD --
   up = rebase
 [core]
-  excludesfile = ~/.gitignore_global
-  editor = vim
+	excludesfile = /Users/zbb/.gitignore_global
+	editor = code --wait
   compression = 3
   quotepath = false
 [commit]
@@ -49,3 +49,9 @@
   required = true
 [push]
   autoSetupRemote = true
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
