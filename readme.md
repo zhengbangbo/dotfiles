@@ -5,9 +5,10 @@
 All dotfiles managed by stow, install stow first
 
 ```bash
-sudo apt install stow # Ubuntu
-
-brew install stow # Homebrew Mac
+# Ubuntu
+apt install stow
+# macOS
+brew install stow
 ```
 
 ## Install 3rd party softwares(options)
@@ -22,10 +23,6 @@ stow -vt ~ stow
 # create symlink
 stow {zsh,git}
 ```
-
-## TODO
-
-- fzf-tab
 
 ## Check Also
 

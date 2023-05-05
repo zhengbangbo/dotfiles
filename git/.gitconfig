@@ -17,21 +17,13 @@
   interactive = auto
 [alias]
   amend = commit --amend --reuse-message=HEAD
-  br = branch
-  c = clone
-  ci = commit -s
-  co = checkout
   gp = log --grep     # 从提交说明中检索
   last = log -1 HEAD
   lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-  n = !git --no-pager
   rc = commit --amend # 修改提交说明
-  st = status
-  unstage = reset HEAD --
-  up = rebase
 [core]
 	excludesfile = /Users/zbb/.gitignore_global
-	editor = nvim
+	editor = code --wait
   compression = 3
   quotepath = false
 [commit]
@@ -49,9 +41,3 @@
   required = true
 [push]
   autoSetupRemote = true
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
