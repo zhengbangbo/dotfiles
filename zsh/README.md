@@ -6,6 +6,7 @@
 > Best plug-in manager is no plug-in manager.
 
 - plugin
+
 ```zsh
 plugins=(
   git
@@ -14,8 +15,3 @@ plugins=(
   zsh-z
 )
 ```
-
-## Installation
-
-1. Run [install.zsh](./install.zsh)
-2. Read [Root README.md](../README.md)
