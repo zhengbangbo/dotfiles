@@ -2,11 +2,11 @@
 # https://git-scm.com/docs/git-config
 [user]
 	email = zhengbangbo@hotmail.com
-	name = Zheng, Bang-Bo
+	name = Zheng Bang-Bo
 	signingkey = CBDD2505A292145C
 # export GPG_TTY=$(tty)
 [gpg]
-	program = /usr/local/MacGPG2/bin/gpg
+	program = /usr/local/bin/gpg
 [github]
   user = zhengbangbo
 [color]
@@ -22,10 +22,11 @@
   lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
   rc = commit --amend # 修改提交说明
 [core]
-	excludesfile = /Users/zbb/.gitignore_global
-	editor = code --wait
+  excludesfile = /Users/zbb/.gitignore_global
+  editor = code --wait
   compression = 3
   quotepath = false
+	autocrlf = input
 [commit]
   gpgsign = true
 [init]
