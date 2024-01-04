@@ -23,7 +23,7 @@
   rc = commit --amend # 修改提交说明
 [core]
   excludesfile = /Users/zbb/.gitignore_global
-  editor = code --wait
+  editor = nvim
   compression = 3
   quotepath = false
 	autocrlf = input

@@ -1,46 +1,23 @@
 # Bang-Bo's Dotfiles
 
-## Install Stow
+[rcm](https://github.com/thoughtbot/rcm)
 
-### Install stow by script
+## zsh
 
-```shell
-sh ./install-stow.sh
-```
+- config manager: oh-my-zsh
+- theme: p10k
 
-### Install stow by manual
+> Best plug-in manager is no plug-in manager.
 
-All dotfiles managed by stow, install stow first
+- plugin
 
-```bash
-# Ubuntu
-apt install stow
-# macOS
-brew install stow
-```
-
-Use Stow
-
-```bash
-# set .stowrc
-stow -vt ~ stow
-```
-
-## Install 3rd party softwares(options)
-
-### Install by script(zsh)
-
-```shell
-sh ./install-zsh.sh
-```
-
-### Install by manual
-
-The zsh, for example, need to run `install.zsh`.
-
-```bash
-# create symlink
-stow {zsh,git}
+```zsh
+plugins=(
+  git
+  zsh-autosuggestions
+  zsh-syntax-highlighting
+  zsh-z
+)
 ```
 
 ## Check Also
@@ -50,4 +27,4 @@ stow {zsh,git}
 ## Thanks
 
 - [antfu/dotfiles](https://github.com/antfu/dotfiles)
-- [keaising/dotfile](https://github.com/keaising/dotfile)  - managed by [stow](https://www.gnu.org/software/stow/)
+- [Innei/dotfiles](https://github.com/Innei/dotfiles)
