@@ -20,6 +20,13 @@ plugins=(
 )
 ```
 
+## fonts
+
+[Nerd Fonts](https://www.nerdfonts.com/font-downloads)
+
+- ComicShannsMono Nerd Font
+- Symbols Nerd Font
+
 ## Check Also
 
 - [zhengbangbo/vscode-settings](https://github.com/zhengbangbo/vscode-settings)
