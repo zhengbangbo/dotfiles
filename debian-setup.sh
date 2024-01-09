@@ -1,9 +1,9 @@
 # Neovim
 wget https://github.com/neovim/neovim/releases/download/stable/nvim-linux64.tar.gz
 tar xzvf nvim-linux64.tar.gz
-rm nvim-linux64.tar.gz
-mv nvim-linux64 /usr/local/nvim
-ln -s /usr/local/nvim/bin/nvim /usr/bin/nvim
+sudo rm nvim-linux64.tar.gz
+sudo mv nvim-linux64 /usr/local/nvim
+sudo ln -s /usr/local/nvim/bin/nvim /usr/bin/nvim
 
 # ZSH
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
