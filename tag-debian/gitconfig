@@ -1,0 +1,44 @@
+# gitconfig
+# https://git-scm.com/docs/git-config
+[user]
+	email = zhengbangbo@hotmail.com
+	name = Zheng Bang-Bo
+	signingkey = CBDD2505A292145C
+# export GPG_TTY=$(tty)
+[gpg]
+	program = /usr/bin/gpg
+[github]
+  user = zhengbangbo
+[color]
+  ui = auto
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
+[alias]
+  amend = commit --amend --reuse-message=HEAD
+  gp = log --grep     # 从提交说明中检索
+  last = log -1 HEAD
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  rc = commit --amend # 修改提交说明
+[core]
+  excludesfile = /Users/zbb/.gitignore_global
+  editor = nvim
+  compression = 3
+  quotepath = false
+	autocrlf = input
+[commit]
+  gpgsign = true
+[init]
+  defaultBranch = main
+[http]
+  postBuffer = 1048576000
+  lowSpeedLimit = 0
+  lowSpeedTime = 999999
+[filter "lfs"]
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
+[push]
+  autoSetupRemote = true
